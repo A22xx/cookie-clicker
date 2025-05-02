@@ -1,0 +1,52 @@
+body{
+    font-family: monospace;
+    background-color: rgb(29, 29, 39);
+    color: rgb(220, 216, 216);
+    text-align: center;
+}
+
+.cookieBtn{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 20px;
+}
+
+button{
+    background-color: rgb(212, 191, 165);
+    color: rgb(52, 51, 51);
+    border-width: 2px;
+    border-color: rgb(228, 208, 183);
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 3px 3px 5px rgba(109, 80, 47, 0.498);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(169, 151, 129);
+    transition: 0.2s;
+}
+
+#currentNum{
+    font-size: 65px;
+}
+
+#cookieNum{
+    font-size: 18px;
+    color: aliceblue;
+    font-style: bold;
+}
+
+#cookieRestart{
+    font-size: 40px;
+    margin: 5px;
+}
+
+.cookieDesc{
+    max-width: 400px;
+    text-align: center;
+    margin:  0 auto;
+    padding: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
