@@ -53,4 +53,6 @@ button:hover{
 
 button{
     touch-action: manipulation;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
