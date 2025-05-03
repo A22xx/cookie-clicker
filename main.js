@@ -23,3 +23,18 @@ document.querySelectorAll("button").forEach(btn => {
         lastTap = currentime;
     });
 });
+
+
+document.getElementById("cookieClicker").addEventListener("click", function () {
+  const currentNum = parseInt(document.getElementById("currentNum").textContent);
+
+  if (currentNum + 1 === 100) {
+    document.getElementById("achievementPopup").classList.remove("hidden");
+  }
+
+  document.getElementById("currentNum").textContent = currentNum + 1;
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("achievementPopup").classList.add("hidden");
+});
