@@ -25,16 +25,24 @@ document.querySelectorAll("button").forEach(btn => {
 });
 
 
+//popup function>>>
+//when cookie clicker btn is clicked, activate func:
 document.getElementById("cookieClicker").addEventListener("click", function () {
-  const currentNum = parseInt(document.getElementById("currentNum").textContent);
-
+  //convert cookie count string to int (change data type)
+  
+  //if next cookie count will be 100, show the popup
   if (currentNum + 1 === 100) {
     document.getElementById("achievementPopup").classList.remove("hidden");
   }
+  //update cookie count on screen/UI to 100
+  /*document.getElementById("currentNum").textContent = currentNum + 1;*/
+  if (currentNum === 99) {
+    currentNum++;
+    document.getElementById("currentNum").textContent = currentNum; // Update display
+  }
 
-  document.getElementById("currentNum").textContent = currentNum + 1;
 });
-
+//when "close" btn is clicked, activate func: hide the popup
 document.getElementById("closePopup").addEventListener("click", function () {
   document.getElementById("achievementPopup").classList.add("hidden");
 });
